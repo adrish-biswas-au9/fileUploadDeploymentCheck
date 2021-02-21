@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <title>File Upload</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Image Upload</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/images">Images</a></li>
+            <li class="active">
+              <a href="/">Upload an image</a>
+            </li>
+            <!-- <li class="active"><a href="/users">Admin</a></li> -->
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/logout"
+                ><span class="glyphicon glyphicon-user"></span> Logout</a
+              >
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+    <h2 style="color:red"><%=errmessage%></h2>
+    <h2 style="color:green"><%=successmessage%></h2>
+    <form action="/images_upload" method="POST" enctype="multipart/form-data">
+      <div>
+        <label>Your Name</label>
+        <input type="text" name="user_name" />
+      </div>
+      <br />
+      <div>
+        <label>Image</label>
+        <input type="file" name="avatar" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
