@@ -1,6 +1,7 @@
 const express = require('express');
 const fileupload= require('express-fileupload');
 const mongo = require('mongodb');
+//const url="mongodb://localhost:27017"
 const url = "mongodb+srv://aRIMEHA_74:7447@cluster0.megge.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const app = express();
 const port = process.env.PORT || 5000;
