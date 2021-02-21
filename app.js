@@ -1,7 +1,7 @@
 const express = require('express');
 const fileupload= require('express-fileupload');
 const mongo = require('mongodb');
-const url = "mongodb+srv://aRIMEHA_74:<password>@cluster0.megge.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const url = "mongodb+srv://aRIMEHA_74:7447@cluster0.megge.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require('cors');
