@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 app.get('/images', (req, res) => {
     //res.status(200).send(data);
     dbo.collection(col_name).find({}).toArray((err, data) => {
-        if (err) throw err;
+        if (err) return res.render('noimage');
         return res.render('view',{data})
         // return res.render(data);
     })
