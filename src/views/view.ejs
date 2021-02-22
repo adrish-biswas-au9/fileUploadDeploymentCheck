@@ -47,7 +47,7 @@
     <%for(i=0;i<data.length;i++){%>
         <div style="display: inline-block;">
             <h6>Uploaded by: <%=data[i].user_given_name%> </h6>
-            <img style="height: 200px; width: 200px;" src="/images/<%=data[i].image_name%>" alt="<%=data[i].image_name%>" />
+            <img style="height: 200px; width: 200px;" src="<%=data[i].path%>" alt="<%=data[i].image_name%>" />
         </div>
         
     <%}%>
