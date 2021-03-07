@@ -59,7 +59,7 @@ app.post('/images_upload',(req,res)=>{
     cloudinary.uploader.upload(image.tempFilePath, (err, result)=> { 
         if(err) throw err;
         //return res.send(result)
-        //lol
+        //lol2
         let info={
             user_given_name: req.body.user_name,
             image_name: result.original_filename,
